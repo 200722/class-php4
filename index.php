@@ -39,10 +39,19 @@ class Tv
          return $this->search;
      }
 
-
- 
-
 }
+
+// Analoge is inherited from Fruit
+class Analoge extends tv {
+    public function message() {
+      echo "Am I Analoge TV? ";
+    }
+   }
+   $Analoge  = new Analoge ("Analoge", "tv", "made by Reem");
+   $Analoge->message();
+
+   
+
 
 echo "<pre>";
 
